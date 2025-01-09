@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form Elements</title>
+</head>
+<body>
+    <h1>HTML5 Form Elements</h1>
+    <form action="#" method="post">
+        <!-- Fieldset and Legend -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <!-- Label and Text Box -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            
+            <!-- Radio Buttons -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+            
+            <!-- Check Boxes -->
+            <label>Interests:</label><br>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label><br>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label><br><br>
+        </fieldset>
+        
+        <br>
+
+        <!-- Selection Box with Size 3 -->
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="country">Select Your Country:</label><br>
+            <select id="country" name="country" size="3" required>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="japan">Japan</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+            </select><br><br>
+        </fieldset>
+        
+        <br>
+
+        <!-- Option Box (Dropdown) -->
+        <label for="language">Choose a Programming Language:</label>
+        <select id="language" name="language">
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+        </select><br><br>
+        
+        <!-- TextArea Box -->
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your comments here..."></textarea><br><br>
+        
+        <!-- Datalist -->
+        <label for="skills">Enter a Skill (with suggestions):</label>
+        <input type="text" id="skills" name="skills" list="skill-list">
+        <datalist id="skill-list">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+            <option value="Java">
+        </datalist><br><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
